@@ -1,0 +1,14 @@
+D:\C++\LeetCode\CSharpDebug\bin\Debug\net8.0\CSharpDebug.exe
+D:\C++\LeetCode\CSharpDebug\bin\Debug\net8.0\CSharpDebug.deps.json
+D:\C++\LeetCode\CSharpDebug\bin\Debug\net8.0\CSharpDebug.runtimeconfig.json
+D:\C++\LeetCode\CSharpDebug\bin\Debug\net8.0\CSharpDebug.dll
+D:\C++\LeetCode\CSharpDebug\bin\Debug\net8.0\CSharpDebug.pdb
+D:\C++\LeetCode\CSharpDebug\obj\Debug\net8.0\CSharpDebug.GeneratedMSBuildEditorConfig.editorconfig
+D:\C++\LeetCode\CSharpDebug\obj\Debug\net8.0\CSharpDebug.AssemblyInfoInputs.cache
+D:\C++\LeetCode\CSharpDebug\obj\Debug\net8.0\CSharpDebug.AssemblyInfo.cs
+D:\C++\LeetCode\CSharpDebug\obj\Debug\net8.0\CSharpDebug.csproj.CoreCompileInputs.cache
+D:\C++\LeetCode\CSharpDebug\obj\Debug\net8.0\CSharpDebug.dll
+D:\C++\LeetCode\CSharpDebug\obj\Debug\net8.0\refint\CSharpDebug.dll
+D:\C++\LeetCode\CSharpDebug\obj\Debug\net8.0\CSharpDebug.pdb
+D:\C++\LeetCode\CSharpDebug\obj\Debug\net8.0\CSharpDebug.genruntimeconfig.cache
+D:\C++\LeetCode\CSharpDebug\obj\Debug\net8.0\ref\CSharpDebug.dll
