@@ -31,11 +31,28 @@
       "name": "Debug TS",
       "type": "node",
       "request": "launch",
-      "runtimeArgs": ["-r", "ts-node/register"],
+      "runtimeArgs": [
+        "-r",
+        "ts-node/register"
+      ],
       // "console": "integratedTerminal",
       "internalConsoleOptions": "openOnSessionStart",
-      "skipFiles": ["<node_internals>/**"],
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
       "program": "${file}"
+    },
+    {
+      "name": "Debug CSharp",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "dotnet build CSharpDebug",
+      "program": "${workspaceFolder}/CSharpDebug/bin/Debug/net9.0/CSharpDebug.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/CSharpDebug",
+      "console": "integratedTerminal",
+      "stopAtEntry": false,
+      "justMyCode": true
     }
   ]
 }
