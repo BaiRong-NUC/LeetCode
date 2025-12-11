@@ -14,6 +14,8 @@
 
 2025 年 4 月 27 日，将./数据结构重命名为./DateStruce
 
+2025年 12月 10日，还原C#调试环境
+
 我的 LeetCode 个人主页：
 
 https://leetcode.cn/u/dodamce/
