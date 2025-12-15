@@ -6,6 +6,7 @@
  */
 #include <stdio.h>
 #include <stdlib.h>
+#include <limits.h>
 struct node
 {
     char info[20];
@@ -44,7 +45,7 @@ void InsertListNode(Node **head, char info[20], int no, int grade)
     dummyHead->next = *head;
     Node *cur = dummyHead;
     Node *prev = NULL; // 前驱节点
-    while (cur != nullptr)
+    while (cur != NULL)
     {
         if (cur->grade > grade)
         {
@@ -66,11 +67,11 @@ void InsertListNode(Node **head, char info[20], int no, int grade)
 
     // 如果遍历完都没有插入,说明新节点是最大的,插入到最后
     // 尾插
-    if (cur == nullptr)
+    if (cur == NULL)
     {
         prev->next = newNode;
-        newNode->next = nullptr;
-        if (*head == nullptr)
+        newNode->next = NULL;
+        if (*head == NULL)
         {
             *head = newNode; // 更新头指针
         }
