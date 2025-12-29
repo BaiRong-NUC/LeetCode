@@ -30,10 +30,14 @@
     {
         static void Main(string[] args)
         {
-            Solution solution = new Solution();
-            int[] nums = new int[] { 0 };
-            int[] result = solution.SortArrayByParity(nums);
-            Console.WriteLine(string.Join(", ", result));
+            Sort.Solution solution = new Sort.Solution();
+            int[] nums = new int[] { 4, 3, 1, 2, 4 };
+            // var result = solution.QuickSort(nums);
+            var result = solution.MergeSort(nums);
+            foreach (var num in result)
+            {
+                Console.Write(num + " ");
+            }
         }
     }
 }
