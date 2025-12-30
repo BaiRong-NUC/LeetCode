@@ -1,5 +1,6 @@
 ﻿namespace CSharpDebug
 {
+    using SingletonPattern;
     public class Solution
     {
         public int[] SortArrayByParity(int[] nums)
@@ -38,6 +39,15 @@
             {
                 Console.Write(num + " ");
             }
+            Console.WriteLine();
+
+            // 测试单例模式
+            HungrySingleton hungrySingleton = HungrySingleton.instance;
+            hungrySingleton.ShowMessage();
+            Console.WriteLine(Object.ReferenceEquals(hungrySingleton, HungrySingleton.instance));
+            LazySingleton lazySingleton = LazySingleton.instance;
+            lazySingleton.ShowMessage();
+            Console.WriteLine(Object.ReferenceEquals(lazySingleton, LazySingleton.instance));
         }
     }
 }
