@@ -52,6 +52,10 @@
             // 测试线程交替打印
             ThreadPrint.PrintCur printCur = new ThreadPrint.PrintCur();
             printCur.Print();
+
+            // 生产者消费者环形缓冲区
+            Console.WriteLine("==========");
+            RingBufferDemo.RunDemo();
         }
     }
 }
