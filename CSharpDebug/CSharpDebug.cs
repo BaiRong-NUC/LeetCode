@@ -48,6 +48,10 @@
             LazySingleton lazySingleton = LazySingleton.instance;
             lazySingleton.ShowMessage();
             Console.WriteLine(Object.ReferenceEquals(lazySingleton, LazySingleton.instance));
+
+            // 测试线程交替打印
+            ThreadPrint.PrintCur printCur = new ThreadPrint.PrintCur();
+            printCur.Print();
         }
     }
 }
