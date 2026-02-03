@@ -31,16 +31,38 @@ public class TreeNode
  */
 public class Solution
 {
-
+    #region 递归
+    // public TreeNode InvertTree(TreeNode root)
+    // {
+    //     if (root == null) return null;
+    //     TreeNode left = InvertTree(root.left);
+    //     TreeNode right = InvertTree(root.right);
+    //     root.left = right;
+    //     root.right = left;
+    //     return root;
+    // }
+    #endregion
+    #region 迭代
     public TreeNode InvertTree(TreeNode root)
     {
         if (root == null) return null;
-        TreeNode left = InvertTree(root.left);
-        TreeNode right = InvertTree(root.right);
-        root.left = right;
-        root.right = left;
+        Queue<TreeNode> queue = new Queue<TreeNode>();
+        queue.Enqueue(root);
+        while (queue.Count > 0)
+        {
+            TreeNode node = queue.Dequeue();
+
+            // 交换左右子节点
+            TreeNode temp = node.left;
+            node.left = node.right;
+            node.right = temp;
+
+            if (node.left != null) queue.Enqueue(node.left);
+            if (node.right != null) queue.Enqueue(node.right);
+        }
         return root;
     }
+    #endregion
 }
 // @lc code=end
 
