@@ -22,12 +22,30 @@ public class Solution
 {
     public int MaxDepth(TreeNode root)
     {
+        // if (root == null) return 0;
+
+        // int leftDepth = MaxDepth(root.left);
+        // int rightDepth = MaxDepth(root.right);
+
+        // return Math.Max(leftDepth, rightDepth) + 1;
+
+        // 非递归
         if (root == null) return 0;
-
-        int leftDepth = MaxDepth(root.left);
-        int rightDepth = MaxDepth(root.right);
-
-        return Math.Max(leftDepth, rightDepth) + 1;
+        Queue<TreeNode> queue = new Queue<TreeNode>();
+        queue.Enqueue(root);
+        int depth = 0;
+        while (queue.Count > 0)
+        {
+            int size = queue.Count;
+            for (int i = 0; i < size; i++)
+            {
+                TreeNode node = queue.Dequeue();
+                if (node.left != null) queue.Enqueue(node.left);
+                if (node.right != null) queue.Enqueue(node.right);
+            }
+            depth++;
+        }
+        return depth;
     }
 }
 // @lc code=end
