@@ -31,7 +31,7 @@ public class Solution
         {
             path.Append(letter);
             Backtrack(digits, start + 1, path, res);
-            path.RemoveAt(path.Length - 1);
+            path.Remove(path.Length - 1, 1);
         }
     }
     public IList<string> LetterCombinations(string digits)
