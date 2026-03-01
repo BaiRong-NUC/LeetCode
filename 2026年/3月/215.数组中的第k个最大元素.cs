@@ -9,7 +9,7 @@ public class Solution
 {
     public int FindKthLargest(int[] nums, int k)
     {
-        // PopK 算法
+        // TopK 算法
         var heap = new PriorityQueue<int, int>(); // 小堆
         foreach (var num in nums)
         {
